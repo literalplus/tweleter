@@ -1,0 +1,6 @@
+[package]
+name = "tweleter"
+version = "0.1.0"
+authors = ["Literallie <git@l1t.li>"]
+
+[dependencies]
