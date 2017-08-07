@@ -1,17 +1,13 @@
-extern crate gtk;
+extern crate qt_core;
+extern crate ansi_term;
 
-use gtk::prelude::*;
-use gtk::{Window, MessageDialog, DialogFlags, MessageType, ButtonsType};
+use qt_core::core_application::CoreApplication;
+
+mod misc;
 
 fn main() {
-    if gtk::init().is_err() {
-        println!("Well, that didn't last long.");
-        panic!("a minute of silence to our lost brother, gtk");
-    }
-
-    MessageDialog::new(None::<&Window>,
-                       DialogFlags::empty(),
-                       MessageType::Info,
-                       ButtonsType::Ok,
-                       "Hello World").run();
+    CoreApplication::create_and_exit(|app| {
+        misc::banner::print_banner();
+        CoreApplication::exec()
+    })
 }

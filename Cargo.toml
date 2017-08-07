@@ -4,7 +4,5 @@ version = "0.1.0"
 authors = ["Literallie <git@l1t.li>"]
 
 [dependencies]
-
-[dependencies.gtk]
-version = "0.1.3"
-features = ["v3_10"]
+qt_core = "0.2.2"
+ansi_term = "0.9"
