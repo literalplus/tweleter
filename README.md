@@ -1,8 +1,4 @@
-Tweleter
-========
-
-![Screenshot of the application banner printed on startup;
-more flames mean more lit](https://raw.githubusercontent.com/xxyy/tweleter/master/assets/console-banner.png)
+![Tweleter - more flames means more lit banner](https://raw.githubusercontent.com/xxyy/tweleter/master/assets/console-banner.png)
 
 This application might in the future be able to delete tweets
 based on a Twitter archive. For now, it just does random stuff
