@@ -54,9 +54,3 @@ fn fill_letters(format: &str) -> String {
 
     return format!("{}", ANSIStrings(&styles_vec));
 }
-
-
-
-
-
-
