@@ -16,9 +16,11 @@ macro_rules! println_combined {
 }
 
 pub fn print_banner() {
+    let version_str =
+        format!("v{: <11}", option_env!("CARGO_PKG_VERSION").unwrap_or("?.?.?"));
     println!(" {}", r!("  *   )              (           )"));
-    println!(" {}       {}", r!("` )  /( (  (      (  )\\   (   ( /(   (   ("),
-             wr!("     Tweleter vX.X.X      "));
+    println!(" {}       {}{}", r!("` )  /( (  (      (  )\\   (   ( /(   (   ("),
+             wr!("     Tweleter "), wr!(version_str));
     println_combined!(r!(" ( )("), y!("_)"), r!("))\\)"), y!(")"), r!("(    )"), y!(")"),
              r!("\\((_) )"), y!(")"), r!("\\  )\\"), y!("()"), r!(") )"), y!(")"),
              r!("\\  )(      "), wr!("      by Literallie       "));
