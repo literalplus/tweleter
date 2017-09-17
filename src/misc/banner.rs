@@ -1,3 +1,5 @@
+//! This module prints a fancy fire banner with the application name and version to the console.
+
 use ansi_term::Colour::{Red, Yellow, Cyan, White};
 use ansi_term::ANSIStrings;
 use std::string::String;
@@ -17,7 +19,7 @@ macro_rules! println_combined {
 
 pub fn print_banner() {
     let version_str =
-        format!("v{: <11}", option_env!("CARGO_PKG_VERSION").unwrap_or("?.?.?"));
+        format!("v{: <11}", super::VERSION_STR);
     println!(" {}", r!("  *   )              (           )"));
     println!(" {}       {}{}", r!("` )  /( (  (      (  )\\   (   ( /(   (   ("),
              wr!("     Tweleter "), wr!(version_str));
