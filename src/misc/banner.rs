@@ -19,7 +19,7 @@ macro_rules! println_combined {
 
 pub fn print_banner() {
     let version_str =
-        format!("v{: <11}", super::VERSION_STR);
+        format!("v{: <11}", super::get_version_str());
     println!(" {}", r!("  *   )              (           )"));
     println!(" {}       {}{}", r!("` )  /( (  (      (  )\\   (   ( /(   (   ("),
              wr!("     Tweleter "), wr!(version_str));
