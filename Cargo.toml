@@ -4,5 +4,8 @@ version = "0.1.0"
 authors = ["Literallie <git@l1t.li>"]
 
 [dependencies]
-qt_core = "0.2.2"
 ansi_term = "0.9"
+
+conrod = {version = "0.55", features = ["winit", "glium"]}
+glium = "0.17"
+piston2d-graphics = "0.21.1"
