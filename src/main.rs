@@ -1,8 +1,9 @@
-#[macro_use] extern crate conrod;
 extern crate ansi_term;
 
 mod misc;
 mod ui;
+
+use ui::TweleterUi;
 
 fn main() {
     misc::banner::print_banner();

@@ -7,7 +7,3 @@ authors = ["Literallie <git@l1t.li>"]
 ansi_term = "0.9"
 
 gtk = {version = "0.3.0", features = ["v3_10"]}
-
-conrod = {version = "0.55", features = ["winit", "glium"]}
-glium = "0.17"
-piston2d-graphics = "0.21.1"

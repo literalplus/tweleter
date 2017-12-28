@@ -20,8 +20,8 @@ macro_rules! gtkclone {
     );
 }
 
-impl GtkUi {
-    pub fn run_ui() {
+impl super::TweleterUi for GtkUi {
+    fn run_ui() {
         if gtk::init().is_err() {
             println!("Well, that didn't last long.");
             panic!("a minute of silence to our lost brother, gtk");
