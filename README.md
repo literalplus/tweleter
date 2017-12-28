@@ -40,6 +40,8 @@ are welcome! Just try to stick to the style of the existing code
 and the generally accepted standards for Rust. I'm always open
 for suggestions.
 
+This project uses [Glade](https://glade.gnome.org/) for GTK+ UI development.
+
 License
 -------
 
