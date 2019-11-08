@@ -1,4 +1,4 @@
-![Tweleter - more flames means more lit banner](https://raw.githubusercontent.com/xxyy/tweleter/master/assets/console-banner.png)
+![Tweleter - more flames means more lit banner](https://raw.githubusercontent.com/literalplus/tweleter/master/assets/console-banner.png)
 
 This application might in the future be able to delete tweets
 based on a Twitter archive. For now, it just does random stuff
@@ -10,7 +10,7 @@ Building
 To build this application, you first need to check it out:
 
 ````bash
-git clone https://github.com/xxyy/tweleter.git
+git clone https://github.com/literalplus/tweleter.git
 ````
 
 To compile it, run this: (you need to 
